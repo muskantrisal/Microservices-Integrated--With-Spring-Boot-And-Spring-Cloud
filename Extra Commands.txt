@@ -1,0 +1,15 @@
+Run this project only in intellij
+
+
+1. Install erlang and rabbit mq in your system
+2. Download zipkin server jar and keep it in the same folder
+
+
+
+3. ====While rabbit service is running in BG===
+
+set RABBIT_URI=amqp://localhost                        
+java -jar zipkin-server-2.12.9-exec.jar           (To launch Zipkin server)
+
+
+=================================If it's the 1st time you're setting up your project make sure to initialise  git-localconfig-repo as a git repo so that spring-cloud-config-server could pick up the changes================================ 
